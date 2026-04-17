@@ -4,13 +4,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCuHYg1pjcZSaIOOFZuI36e2VjMkJ1GHTU",
-  authDomain: "react-learn-b2837.firebaseapp.com",
-  databaseURL: "https://react-learn-b2837-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "react-learn-b2837",
-  storageBucket: "react-learn-b2837.firebasestorage.app",
-  messagingSenderId: "27507598991",
-  appId: "1:27507598991:web:37b90cbf0b205773dc32fa"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
